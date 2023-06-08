@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { HeaderViewProps } from '@ant-design/pro-layout/es/components/Header'
 import styles from './index.module.less'
 import {
@@ -19,7 +19,7 @@ import MenuList from '../MenuList'
 import { useNavigate } from 'react-router-dom'
 import { fetchUserInfo } from '@/store/user/async'
 
-function HeaderRender(props: HeaderViewProps, defaultDom: React.ReactNode) {
+function HeaderRender(props: HeaderViewProps) {
   const navigate = useNavigate()
 
   const { token, user_info, logout, setLoginModal } = userStore()

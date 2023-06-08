@@ -2,7 +2,7 @@ import React from 'react'
 import type { RouteObject } from 'react-router-dom'
 
 type ConfigureType = {
-  verifToken?: boolean
+  verifyToken?: boolean
   title?: string
   role: Array<'user' | 'administrator' | string>
 }
@@ -42,7 +42,7 @@ export const webRouter: RouteOptions[] = [
     element: <ChatPage />,
     children: [],
     configure: {
-      verifToken: false,
+      verifyToken: false,
       role: ['user', 'administrator']
     }
   },
@@ -52,7 +52,7 @@ export const webRouter: RouteOptions[] = [
     element: <DrawPage />,
     children: [],
     configure: {
-      verifToken: false,
+      verifyToken: false,
       role: ['user', 'administrator']
     }
   },
@@ -62,7 +62,7 @@ export const webRouter: RouteOptions[] = [
     element: <ShopPage />,
     children: [],
     configure: {
-      verifToken: true,
+      verifyToken: true,
       role: ['user', 'administrator']
     }
   },
@@ -72,7 +72,7 @@ export const webRouter: RouteOptions[] = [
     element: <UserPage />,
     children: [],
     configure: {
-      verifToken: true,
+      verifyToken: true,
       role: ['user', 'administrator']
     }
   },
@@ -82,7 +82,7 @@ export const webRouter: RouteOptions[] = [
     element: <LoginPage />,
     children: [],
     configure: {
-      verifToken: false,
+      verifyToken: false,
       role: ['user', 'administrator']
     }
   },
@@ -92,7 +92,7 @@ export const webRouter: RouteOptions[] = [
     element: <ResultPage />,
     children: [],
     configure: {
-      verifToken: false,
+      verifyToken: false,
       role: ['user', 'administrator']
     }
   },
@@ -102,7 +102,7 @@ export const webRouter: RouteOptions[] = [
     element: <Page404 />,
     children: [],
     configure: {
-      verifToken: false,
+      verifyToken: false,
       role: ['user', 'administrator']
     }
   },
@@ -112,7 +112,7 @@ export const webRouter: RouteOptions[] = [
     element: <Page404 />,
     children: [],
     configure: {
-      verifToken: false,
+      verifyToken: false,
       role: ['user', 'administrator']
     }
   }
@@ -131,7 +131,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '卡密管理',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -142,7 +142,7 @@ export const adminRouter: RouteOptions[] = [
         index: true,
         configure: {
           title: '用户管理',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -153,7 +153,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '消费记录',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -164,7 +164,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '签到记录',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -175,7 +175,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '对话记录',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -186,7 +186,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '商品列表',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -197,7 +197,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '支付配置',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -208,7 +208,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: 'Toekn管理',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -219,7 +219,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '订单管理',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -230,7 +230,7 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '系统配置',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       },
@@ -241,13 +241,13 @@ export const adminRouter: RouteOptions[] = [
         index: false,
         configure: {
           title: '系统通知配置',
-          verifToken: true,
+          verifyToken: true,
           role: ['administrator']
         }
       }
     ],
     configure: {
-      verifToken: true,
+      verifyToken: true,
       role: ['administrator']
     }
   }

@@ -20,7 +20,7 @@ function AuthRouter(props: AuthRouterProps) {
       document.title = title
     }
     const userRole = user_info?.role || 'user'
-    if (routerDetail?.configure?.verifToken && !token) {
+    if (routerDetail?.configure?.verifyToken && !token) {
       navigate('/')
       navigate('/login', {
         state: {

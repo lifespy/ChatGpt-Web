@@ -1,5 +1,5 @@
 module.exports = {
-    printWidth: 100, // 最大行长规则通常设置为 100 或 120。
+    printWidth: 120, // 最大行长规则通常设置为 100 或 120。
     tabWidth: 2, // 指定每个标签缩进级别的空格数。
     useTabs: false, // 使用制表符而不是空格缩进行。
     semi: false, // true（默认）: 在每条语句的末尾添加一个分号。false：仅在可能导致 ASI 失败的行的开头添加分号。

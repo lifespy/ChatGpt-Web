@@ -38,7 +38,7 @@
         "esnext.asynciterable"
     ]
   },
-  "include": ["./server"],
+//  "include": ["./server"],
   "exclude": [
       "node_modules"
   ]
